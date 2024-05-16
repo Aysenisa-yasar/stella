@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="styless/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>pay securely</title>
+
+
+</head>
+
+
+<body>
+    <header class="header">
+
+
+
+        <a href="#" class="logo">
+            <img src="images/stellalogo.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html " class="active" onclick="window.location.href='/'">Home </a>
+            <a href="about.html">About </a>
+            <a href="menu.html">Menu</a>
+            <a href="products.html">Products </a>
+            <a href="contact.html">Contact</a>
+            <a href="#review">review</a>
+            <a href="#blogs">Blogs</a>
+
+        </nav>
+        <div class="buttons">
+
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="cart-btn"> <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="search-here">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+
+       
+        
+        </div>
+
+
+    </header>
+<!--payseculery section start-->
+
+
+
+
+<section class="contact" id="contact">
+
+
+
+    <h1 class="heading">pay <span>securely</span></h1>
+    <div class="row">
+
+
+        <form>
+            <h3>pay securely</h3>
+            <div class="input-box">
+                
+                <input type="text" placeholder="you can write your order note here" />
+            </div>
+            <div class="input-box" >
+                
+  
+            
+            <p>     don't ring the bell<input type="radio" id="secenek1" name="secenek" value="secenek1"></p>  
+                    
+            <p>  leave it at the door   <input type="radio" id="secenek2" name="secenek" value="secenek2" ></p>  
+                    
+                
+                
+            </div>
+            <div class="input-box">
+                
+             <p>protect the environment <i>(no cutlery service)</i>  <input type="checkbox" placeholder="Enter your email address" /></p> 
+            </div>
+            <div class="input-box">
+              <p> <i class="fa-solid fa-phone"></i> an 850 number may call you</p>
+
+              
+                
+            </div>
+            <div class="input-box">
+                
+            <p>    let him come now<input type="radio" id="secenek1" name="secenek3" value="secenek1"></p>  
+                    
+            <p>  advanced date <input type="radio" id="secenek2" name="secenek3" value="secenek2" ></p>  
+            </div>
+            
+            <div class="input-box">
+               
+           <p><b>pay at the </b> (porta un dispositivo pos)<input type="checkbox" id="secenek2" name="secenek" value="secenek2" ></p>
+            </div>
+          
+            <input type="button" class="btn" value="pay securely"  id="btn-submit">
+
+  
+
+            <div id="order-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>your sipash is on the way!</p>
+                </div>
+            </div>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btn-submit').click(function () {
+            $('#order-modal').show();
+            setTimeout(function () {
+                $('#order-modal').hide();
+            }, 3000); // 3000 milisaniye (3 saniye) sonra modal kapatılır
+        });
+
+        // Modal kapatma butonu
+        $('.close').click(function () {
+            $('#order-modal').hide();
+        });
+
+        // Modal dışına tıklama ile modalı kapatma
+        $(window).click(function (event) {
+            if (event.target == $('#order-modal')[0]) {
+                $('#order-modal').hide();
+            }
+        });
+    });
+</script>
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+</section>
+
+<!--payseculery section end-->
+<script src="js/script.js"></script>
+</body>
+
+</html>
